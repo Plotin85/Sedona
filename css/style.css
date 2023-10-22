@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sanss";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.page-navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.user-navigation-link {
+  font-size: 16px;
+  line-height: 20px;
+  list-style-type: none;
+}
+
+.page-title .hotel-search-title .subscription-title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.page-title-discription .hotel-search-discription .subscription-discription {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.advantages-title .feature-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.advantages-discription .feature-discription {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.hotel-search-title {
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hotel-search-btn {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/*подключить фоновые и декоративные изобрацения и фоны*/

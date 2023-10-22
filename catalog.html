@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Каталог гостниц в Седоне.</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -52,82 +53,86 @@
             <a href="#" class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
+        <div class="catalog-hotel-filter">
+          <h2 class="visually-hidden">Фильтр каталога гостиниц.</h2>
+          <form
+            class="catalog-filter"
+            action="https://echo.htmlacademy.ru/"
+            method="get"
+          >
+            <fieldset class="hotel-filter">
+              <legend class="hotel-filter-title">Инфраструктура:</legend>
+              <ul class="infrastructure-list">
+                <li class="infrastructure-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="pool"
+                      checked
+                    />
+                    Бассейн
+                  </label>
+                </li>
+                <li class="infrastructure-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="parking"
+                      checked
+                    />
+                    Паркинг
+                  </label>
+                </li>
+                <li class="infrastructure-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="wifi" />
+                    Wi-Fi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="hotel-filter">
+              <legend class="hotel-filter-title">Тип жилья:</legend>
+              <ul class="type-list">
+                <li class="type-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="hotel"
+                      checked
+                    />
+                    Гостиница
+                  </label>
+                </li>
+                <li class="type-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="motel" />
+                    Мотель
+                  </label>
+                </li>
+                <li class="type-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="apartments"
+                    />
+                    Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="hotel-filter">
+              <legend class="hotel-filter-title">Стоимость, ₽:</legend>
+            </fieldset>
+            <button class="button" type="submit">Применить</button>
+            <button class="button" type="submit">Сбросить</button>
+          </form>
+        </div>
       </header>
-      <div class="catalog-hotel-filter">
-        <h2 class="visually-hidden">Фильтр каталога гостиниц.</h2>
-        <form
-          class="catalog-filter"
-          action="https://echo.htmlacademy.ru/"
-          method="get"
-        >
-          <fieldset class="hotel-filter">
-            <legend class="hotel-filter-title">Инфраструктура:</legend>
-            <ul class="infrastructure-list">
-              <li class="infrastructure-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="checkbox"
-                    name="pool"
-                    checked
-                  />
-                  Бассейн
-                </label>
-              </li>
-              <li class="infrastructure-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="checkbox"
-                    name="parking"
-                    checked
-                  />
-                  Паркинг
-                </label>
-              </li>
-              <li class="infrastructure-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="wifi" />
-                  Wi-Fi
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="hotel-filter">
-            <legend class="hotel-filter-title">Тип жилья:</legend>
-            <ul class="type-list">
-              <li class="type-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="radio"
-                    name="hotel"
-                    checked
-                  />
-                  Гостиница
-                </label>
-              </li>
-              <li class="type-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="motel" />
-                  Мотель
-                </label>
-              </li>
-              <li class="type-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="apartments" />
-                  Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="hotel-filter">
-            <legend class="hotel-filter-title">Стоимость, ₽:</legend>
-          </fieldset>
-          <button class="button" type="submit">Применить</button>
-          <button class="button" type="submit">Сбросить</button>
-        </form>
-      </div>
       <div class="searching-results">
         <h2 class="searching-results-title">Найдено гостиниц: 38</h2>
         <select class="select-control" area-label="Сортировка">
@@ -157,10 +162,34 @@
               <button class="more">подробнее</button>
               <button class="favorites">в избранное</button>
               <div class="rating">
-                <img class="star" src="img/star.svg" alt="Звезда" />
-                <img class="star" src="img/star.svg" alt="Звезда" />
-                <img class="star" src="img/star.svg" alt="Звезда" />
-                <img class="star" src="img/star.svg" alt="Звезда" />
+                <img
+                  class="star"
+                  src="img/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Звезда"
+                />
+                <img
+                  class="star"
+                  src="img/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Звезда"
+                />
+                <img
+                  class="star"
+                  src="img/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Звезда"
+                />
+                <img
+                  class="star"
+                  src="img/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Звезда"
+                />
                 <span class="rating-value">Рейтинг: 8,5</span>
               </div>
             </a>
@@ -180,10 +209,34 @@
               <button class="more">подробнее</button>
               <button class="favorites">в избранное</button>
               <div class="rating">
-                <img class="star" src="img/star.svg" alt="Звезда" />
-                <img class="star" src="img/star.svg" alt="Звезда" />
-                <img class="star" src="img/star.svg" alt="Звезда" />
-                <img class="star" src="img/star.svg" alt="Звезда" />
+                <img
+                  class="star"
+                  src="img/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Звезда"
+                />
+                <img
+                  class="star"
+                  src="img/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Звезда"
+                />
+                <img
+                  class="star"
+                  src="img/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Звезда"
+                />
+                <img
+                  class="star"
+                  src="img/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Звезда"
+                />
                 <span class="rating-value">Рейтинг: 9,2</span>
               </div>
             </a>
@@ -203,9 +256,27 @@
               <button class="more">подробнее</button>
               <button class="favorites">в избранное</button>
               <div class="rating">
-                <img class="star" src="img/star.svg" alt="Звезда" />
-                <img class="star" src="img/star.svg" alt="Звезда" />
-                <img class="star" src="img/star.svg" alt="Звезда" />
+                <img
+                  class="star"
+                  src="img/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Звезда"
+                />
+                <img
+                  class="star"
+                  src="img/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Звезда"
+                />
+                <img
+                  class="star"
+                  src="img/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Звезда"
+                />
                 <span class="rating-value">Рейтинг: 6,9</span>
               </div>
             </a>
@@ -225,8 +296,20 @@
               <button class="more">подробнее</button>
               <button class="favorites">в избранное</button>
               <div class="rating">
-                <img class="star" src="img/star.svg" alt="Звезда" />
-                <img class="star" src="img/star.svg" alt="Звезда" />
+                <img
+                  class="star"
+                  src="img/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Звезда"
+                />
+                <img
+                  class="star"
+                  src="img/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Звезда"
+                />
                 <span class="rating-value">Рейтинг: 5,0</span>
               </div>
             </a>
@@ -265,23 +348,39 @@
       <ul class="social-icons-list">
         <li class="social-icons-item">
           <a href="#" class="social-icons-link"
-            ><img src="img/vk.png" alt="Ссылка на страницу Вконтакте."
+            ><img
+              src="img/vk.png"
+              width="24"
+              height="14"
+              alt="Ссылка на страницу Вконтакте."
           /></a>
         </li>
         <li class="social-icons-item">
           <a href="#" class="social-icons-link"
-            ><img src="img/telegram.png" alt="Ссылка на канал Телеграм."
+            ><img
+              src="img/telegram.png"
+              width="18"
+              height="15"
+              alt="Ссылка на канал Телеграм."
           /></a>
         </li>
         <li class="social-icons-item">
           <a href="#" class="social-icons-link"
-            ><img src="img/youtube.png" alt="Ссылка на канал Ютуб."
+            ><img
+              src="img/youtube.png"
+              width="22"
+              height="17"
+              alt="Ссылка на канал Ютуб."
           /></a>
         </li>
       </ul>
-      <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="phone-footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a href="#" class="html-academy-logo"
-        ><img src="img/HTML Academy.svg" alt="Логотип HTML-академии."
+        ><img
+          src="img/HTML Academy.svg"
+          width="115"
+          height="33"
+          alt="Логотип HTML-академии."
       /></a>
     </footer>
   </body>
