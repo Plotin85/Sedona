@@ -28,6 +28,7 @@ a {
 
 li {
   list-style-type: none;
+  color: inherit;
 }
 
 .page-navigation-link {
@@ -64,8 +65,24 @@ li {
   line-height: 21px;
 }
 
-.hotel-search-title {
-  text-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+.text-light {
+  color: #FFFFFF;
+}
+
+.bg-dark {
+  background-color: #82b3d3;
+}
+
+.bg-average {
+  background-color: #83B3D333;
+}
+
+.bg-light {
+  background-color: #83B3D31F;
+}
+
+.pagination-current {
+  background-color: #83B3D31F;
 }
 
 .hotel-search-btn {
@@ -73,4 +90,10 @@ li {
   line-height: 36px;
 }
 
-/*подключить фоновые и декоративные изобрацения и фоны*/
+.subscription-main {
+  background-image: url(../img/subscription-bg.jpg);
+}
+
+.inner-header {
+  background-image: url(../img/catalog-hero-bg.jpg);
+}
